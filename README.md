@@ -33,11 +33,11 @@ Note that there can be only one diffsave window per tab.
 
 Assume you have written such a file to disk:
 
-![before](doc/before.png =x200)
+![before](doc/before.png)
 
 After this, you made some more edits without saving:
 
-![after](doc/after.png =x200)
+![after](doc/after.png)
 
 And now you want to exit vim by `:q`, but vim asks you if you want to write
 unsaved changes. To look at where the changes really occurred, you type your
