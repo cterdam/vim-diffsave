@@ -19,8 +19,9 @@ Plug 'cterdam/vim-diffsave'
 
 ## Usage
 
-The plugin creates the command `<Plug>ToggleDiffSave`. In your `vimrc`, map
-this command to a hotkey:
+The plugin creates the command `<Plug>ToggleDiffSave`.
+
+In your `vimrc`, map this command to a hotkey:
 
 ```vim
 nmap <Leader>w <Plug>ToggleDiffSave<CR>
