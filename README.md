@@ -7,8 +7,8 @@ file has changed since last disk save.
 
 ## Installation
 
-Use your favorite vim plugin manager. For example, if you are using
-[vim-plug][1], put this in your `vimrc`:
+Use your favorite vim plugin manager. For example, if you use [vim-plug][1], put
+this in your `vimrc`:
 
 [1]:
 https://github.com/junegunn/vim-plug
@@ -19,9 +19,8 @@ Plug 'cterdam/vim-diffsave'
 
 ## Usage
 
-The plugin creates the command `<Plug>ToggleDiffSave`.
-
-In your `vimrc`, map this command to a hotkey:
+The plugin creates the command `<Plug>ToggleDiffSave`.  
+In your `vimrc`, map this command to a key sequence:
 
 ```vim
 nmap <Leader>w <Plug>ToggleDiffSave<CR>
