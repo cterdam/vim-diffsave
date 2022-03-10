@@ -44,9 +44,9 @@ After this, make some more edits **without saving**:
 
 ![after](doc/after.png)
 
-Now try to exit vim by `:q`, but vim asks you if you want to write unsaved
-changes. To look at where the changes really occurred, type your mapped key
-sequence (`<Leader>w`) to get a diff window showing all unsaved changes:
+Now you can't exit vim by `:q` without resolving unsaved changes. To look at
+where the changes really occurred, type your mapped key sequence (`<Leader>w`)
+to get a diff window showing all unsaved changes:
 
 ![diffsaveview](doc/diffsaveview.png)
 
@@ -54,8 +54,9 @@ All changes are color-coded. If the file is really long, unchanged parts
 will be folded into temporary folds, without impacting your `fold` settings.
 This is functionality provided by `vimdiff`.
 
-Type your key sequence again, and the diff window will be collapsed. You will be
+Type the key sequence again, and the diff window will be collapsed. You will be
 looking at your edited (unsaved) file again.
 
-Note that if you saved your changes before calling the command, the diff window
-will show nothing, as your file is no different from its save on disk.
+Note that if you save your changes just before calling the command, the diff
+window will show nothing, as your file would be no different from its save on
+disk.
