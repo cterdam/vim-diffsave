@@ -49,7 +49,7 @@ Now you can't exit vim by `:q` without resolving unsaved changes. To look at
 where the changes really occurred, type your mapped key sequence (`<Leader>w`)
 to get a diff window showing all unsaved changes:
 
-![diffsaveview](doc/diffsaveview.png)
+![toggleview](doc/toggleview.png)
 
 All changes are color-coded. If the file is really long, unchanged parts will
 be folded into temporary folds, without impacting your `fold` settings. This

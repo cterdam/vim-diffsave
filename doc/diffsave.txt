@@ -1,0 +1,37 @@
+*diffsave.txt*  view where a file has changed since last save
+
+Author: Josh Lee <llz dot joshlee at gmail dot com>
+License: MIT
+
+==============================================================================
+INTRO								      *diffsave*
+
+When you try to exit vim, vim prompts you about unsaved changes. However, you
+aren't sure whether to save, because you lost track of all the places you
+edited. vim-diffsave is a lightweight vim plugin that allows you to view where
+a file has changed since last disk save.
+
+==============================================================================
+INSTALLATION
+
+Use your favorite vim plugin manager. For example, if you use vim-plug, put
+this in your vimrc: >
+    Plug 'cterdam/vim-diffsave'
+<
+==============================================================================
+USAGE							        *ToggleDiffSave*
+
+The plugin creates the command <Plug>ToggleDiffSave.
+In your vimrc, map this command to a key sequence: >
+    nmap <Leader>w <Plug>ToggleDiffSave<CR>
+<
+Now, in normal mode, type <Leader>w to toggle a diffsave window comparing the
+active file's content with its last save, if the active file is modifiable.
+
+If the active file is unmodifiable, nothing will be triggered.
+
+Note that there can be only one diffsave window per tab. If one exists in the
+current tab, calling the command will only close it before opening new ones.
+
+
+vim:tw=78:ts=8:noet:ft=help:norl:
