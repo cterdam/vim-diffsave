@@ -7,10 +7,10 @@ a file has changed since last disk save.
 
 ## Installation
 
-Use your favorite vim plugin manager. For example, if you use [vim-plug][1],
+Use your favorite vim plugin manager. For example, if you use [vim-plug][VP],
 put this in your `vimrc`:
 
-[1]:
+[VP]:
 https://github.com/junegunn/vim-plug
 
 ```vim
@@ -19,16 +19,16 @@ Plug 'cterdam/vim-diffsave'
 
 ## Usage
 
-The plugin creates the command `<Plug>ToggleDiffSave`.  
-In your `vimrc`, map this command to a key sequence:
+The plugin creates the command `<Plug>ToggleDiffSave`. In your `vimrc`, map
+this command to a key sequence:
 
 ```vim
 nmap <Leader>w <Plug>ToggleDiffSave<CR>
 ```
 
 Now, in normal mode, type `<Leader>w` to toggle a diffsave window comparing
-the active file's content with its last save, if the active file is
-modifiable.
+the active file's content with its last save. By default, the Leader key is
+`\`, the key above `Enter` on most keyboards.
 
 If the active file is unmodifiable, nothing will be triggered.
 
@@ -58,6 +58,5 @@ is functionality provided by `vimdiff`.
 Type the key sequence again, and the diff window will be collapsed. You will
 be looking at your edited (unsaved) file again.
 
-Note that if you save your changes just before calling the command, the diff
-window will show nothing, as your file would be no different from its save on
-disk.
+Note that after saving changes with `:w`, the diff window will show nothing,
+as the file would be the same as its disk save.
